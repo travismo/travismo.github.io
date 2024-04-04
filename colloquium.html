@@ -225,7 +225,8 @@ Combinatorial Commutative Algebra is rich with connections to other areas of Mat
   <div class="row">
     <div class="col-md-3">April 5</div>
     <div class="col-md-9">
-    <p>Title TBA</p>
+    <p> Stability of time discretizations for 
+      semi-discrete high order schemes for time-dependent PDEs</p>
     <p>Chi-Wang Shu	(Brown)</p>
     <p>
       <button class="btn btn-primary"
@@ -237,7 +238,29 @@ Combinatorial Commutative Algebra is rich with connections to other areas of Mat
     </p>
     <div class="collapse" id="Shu">
       <div class="card card-body">
-        TBA
+     In scientific and engineering computing, we encounter time-dependent
+ partial differential equations (PDEs) frequently.  When designing high 
+ order schemes for solving these time-dependent PDEs, we often first 
+ develop semi-discrete schemes paying attention only to spatial 
+ discretizations and leaving time $t$ continuous.  It is then important 
+ to have a high order time discretization to main the stability
+ properties of the semi-discrete schemes.  In this talk we discuss several
+ classes of high order time discretization, including the strong stability
+ preserving (SSP) time discretization, which preserves strong stability from
+ a stable spatial discretization with Euler forward, the implicit-explicit
+ (IMEX) Runge-Kutta or multi-step time marching, which treats the more
+ stiff term (e.g. diffusion term in a convection-diffusion equation)
+ implicitly and the less stiff term (e.g. the convection term in such an
+ equation) explicitly, for which strong stability can be proved under the
+ condition that the time step is upper-bounded by a constant under
+ suitable conditions, the explicit-implicit-null (EIN) time marching,
+ which adds a linear highest derivative term to both sides of the PDE
+ and then uses IMEX time marching, and is particularly suitable for
+ high order PDEs with leading nonlinear terms, and the explicit 
+ Runge-Kutta methods, for which strong stability can be proved in many cases 
+ for semi-negative linear semi-discrete schemes.  Numerical examples will be 
+ given to demonstrate the performance of these schemes.  
+ 
       </div>
     </div>
   </div>
